@@ -1,5 +1,7 @@
 * {
   font-family: 'Tajawal';
+  direction: rtl;
+  font-size: 18px;
 }
 :root {
   --main: #42b72a;
@@ -51,5 +53,20 @@
 /* header style end */
 
 /* features style start */
-
+/* features style end */
+.features__app__details {
+  background-color: #f1f5f7;
+  padding: 4rem auto;
+  margin: 2rem auto;
+}
+.features__app__details__content {
+  padding: 4rem 0;
+}
+.features__app__details__content__title {
+  font-weight: bolder;
+}
+.features__app__details__content__title span {
+  color: #3bb760;
+  font-size: 2.3rem;
+}
 /* features style end */
