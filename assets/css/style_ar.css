@@ -52,8 +52,6 @@
 
 /* header style end */
 
-/* features style start */
-/* features style end */
 .features__app__details {
   background-color: #f1f5f7;
   padding: 4rem auto;
@@ -69,5 +67,71 @@
 .features__app__details__content__title span {
   color:#42b72a;
   font-size: 2.3rem;
+}
+.mute_text{
+opacity: .8;
+
+}
+.features__app__items{
+margin: 3rem auto;
+}
+.features__app__item{
+    position: relative;
+      margin: 1rem auto;
+
+}
+.features__app__item img{
+  position: absolute;
+}
+.features__app__items_content{
+  margin-right: 2.2rem;
+}
+.features__app__items_content h2{
+  font-weight: bold;
+  font-size: 1.3rem;
+
+}
+.features__system{
+  background-color: var(--main);
+  display: flex;
+  justify-content: space-between;
+  background-image: url(https://www.daftra.com/themed/multi_language/images/curve.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 314px -419px;
+  padding: 50px 60px;
+    border-radius: 20px;
+    margin: 50px 0;
+  margin-top: 4rem;
+}
+.features__system__content{
+  color: #fff;
+  /* width: 49%; */
+}
+.features__system__content h2{
+  margin-bottom: 2rem;
+}
+.features__system__content_button{
+  text-align: center ;
+}
+.features__system__content_button button{
+  padding: .7rem 2rem;
+  background-color: #fff;
+  border: none;
+  margin: 3.5rem auto;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.features__system__content_button button:hover{
+  background-color: #ddd;
+}
+@media only screen and (max-width: 600px)  {
+    .features__app__details{
+      text-align: center;
+    }
+    .features__app__items_content{
+      margin-top: 2.5rem;
+    } 
 }
 /* features style end */
