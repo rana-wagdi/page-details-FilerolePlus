@@ -1,8 +1,52 @@
 * {
   font-family: 'Tajawal';
 }
+:root {
+  --main: #42b72a;
+  --secondry: #ffffff;
+}
 
 /* header style start */
+.content-header {
+  height: 100vh;
+  display: flex;
+}
+
+.inner-content-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.product-img {
+  width: 50%;
+  text-align: center;
+}
+
+.product-img img {
+  width: 70%;
+}
+
+.product-description {
+  width: 50%;
+  text-align: right;
+}
+.product-description h2{
+  font-size: 55px;
+  font-weight: bold;
+}
+.product-description p{
+  font-size: 22px;
+}
+.product-description .call-to-action{
+  background-color: var(--main);
+  padding: 15px 35px;
+}
+.btn-success:active:focus{
+  box-shadow: none !important;
+}
 
 /* header style end */
 
