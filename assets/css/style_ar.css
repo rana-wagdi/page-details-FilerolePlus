@@ -1,5 +1,5 @@
 * {
-  font-family: 'Tajawal';
+  /* font-family: 'Tajawal'; */
   direction: rtl;
   font-size: 18px;
 }
@@ -145,7 +145,7 @@ margin: 3rem auto;
   flex-wrap: wrap;
 }
 .features-text{
-  width: 30%;
+  width: 42%;
 }
 .features-text h2{
   font-size: 45px;
@@ -202,7 +202,7 @@ article.card .infos {
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
 article.card .infos .desc{
-  font-size: 18px;
+  font-size: 15px;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -299,3 +299,26 @@ article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:h
  }
 
 /* features style end */
+@media (max-width: 991.98px) { 
+  .features-text {
+    width: 100%;
+}
+.inner-content-header{
+  flex-direction: column;
+}
+.product-img{
+  width: 100%;
+}
+.product-description{
+  width: 100%;
+}
+.features__app__details__content {
+  padding: 4rem 1rem;
+}
+.features__app__items_content {
+  margin-right: 0 !important;
+}
+.features__system {
+  padding: 50px 24px;
+}
+ }
