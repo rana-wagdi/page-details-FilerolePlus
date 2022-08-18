@@ -418,7 +418,7 @@ article.card:hover .infos .details {
 .pay__year,
 .pay__month {
   display: block;
-  padding-left: 35px;
+  /* padding-left: 35px; */
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -457,18 +457,19 @@ article.card:hover .infos .details {
 padding:19px !important;
 }
 .feature__details:hover{
-  /* scale: 1.1; */
   background-color: #ddd;
   opacity: 1 !important;
-  /* background-color: #42b72a; */
-   transition: all .2s ease-in-out; 
-   border-radius: 5px;
-   /* margin: 0 1rem; */
+  transition: all .2s ease-in-out; 
+  border-radius: 5px;
+   
 }
 .feature__details:hover .feature__details_p{
   opacity: 1 !important;
 }
 @media (max-width:580px) {
+.pay__year, .pay__month{
+  padding-left: 0;
+}
   .features__app__item img {
       margin-right: -1.2rem;
   }
