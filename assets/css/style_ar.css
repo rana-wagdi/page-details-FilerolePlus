@@ -1,5 +1,4 @@
 * {
-  /* font-family: 'Tajawal'; */
   direction: rtl;
   font-size: 18px;
 }
@@ -7,15 +6,42 @@
   --main: #1e824c !important;
   --secondry: #ffffff;
 }
-
+.container{
+  overflow: hidden;
+}
 /* header style start */
 .content-header {
   height: 100vh;
-  display: flex;
 }
-
+.content-header, .inner-content-header, .features__system, .features-items, .pay__content,
+.pay__content_detail, .pay__content.active,
+.pay__content_detail.active {
+    display: flex;
+}
+.features__app__item img, article.card .thumb i, article.card .infos .flag, article.card .infos .details, .pay__year input,
+.pay__month input  {
+  position: absolute;
+}
+.features__app__item, article.card .infos, article.card .infos .title, .pay__year,
+.pay__month {
+    position: relative;
+}
+.product-description .call-to-action, .features__system, .icon_check, .pay_now_btn, .pay__content.active,
+.pay__content_detail.active  {
+   background-color: var(--main);
+}
+.features-text h2 span , .plan__content_item h2, .pay__content,
+.pay__content_detail, .pay_now_btn:hover{
+  color: var(--main);
+}
+.features__system__content_button button, .plan__content_item, .pay_now_btn:hover{
+    background-color: #fff;
+}
+.features__system__content, article.card .thumb i, .icon_check, .pay__content.active,
+.pay__content_detail.active, .pay__content.active p, .pay__content_detail.active p, .pay_now_btn {
+  color: #fff;
+}
 .inner-content-header {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -43,7 +69,6 @@
   font-size: 22px;
 }
 .product-description .call-to-action {
-  background-color: var(--main);
   padding: 15px 35px;
 }
 .btn-success:active:focus {
@@ -75,11 +100,7 @@
   margin: 3rem auto;
 }
 .features__app__item {
-  position: relative;
   margin: 1rem auto;
-}
-.features__app__item img {
-  position: absolute;
 }
 .features__app__items_content {
   margin-right: 2.2rem;
@@ -89,8 +110,6 @@
   font-size: 1.3rem;
 }
 .features__system {
-  background-color: var(--main);
-  display: flex;
   justify-content: space-between;
   background-image: url(https://www.daftra.com/themed/multi_language/images/curve.webp);
   background-size: cover;
@@ -101,10 +120,7 @@
   margin: 50px 0;
   margin-top: 4rem;
 }
-.features__system__content {
-  color: #fff;
-  /* width: 49%; */
-}
+
 .features__system__content h2 {
   margin-bottom: 2rem;
 }
@@ -113,7 +129,6 @@
 }
 .features__system__content_button button {
   padding: 0.7rem 2rem;
-  background-color: #fff;
   border: none;
   margin: 3.5rem auto;
   font-size: 1.3rem;
@@ -136,7 +151,6 @@
   padding: 30px 0;
 }
 .features-items {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -150,7 +164,6 @@
 }
 .features-text h2 span {
   font-size: 45px;
-  color: var(--main);
 }
 .features-text p {
   font-size: 19px;
@@ -182,19 +195,16 @@ article.card .thumb {
   border-radius: 3px;
 }
 article.card .thumb i {
-  position: absolute;
   top: 50%;
   left: 50%;
   width: 50px;
   height: 50px;
   z-index: 9999;
-  color: #fff;
   transform: translate(-50%, -50%) translateZ(0);
 }
 article.card .infos {
   width: auto;
   height: 350px;
-  position: relative;
   padding: 14px 24px;
   background: #fff;
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
@@ -209,7 +219,6 @@ article.card .infos .desc{
   line-height: 30.5px;
 }
 article.card .infos .title {
-  position: relative;
   margin: 10px 0;
   color: #152536;
   font-family: 'Grotesque Black', sans-serif;
@@ -221,7 +230,6 @@ article.card .infos i {
   font-size: 40px;
 }
 article.card .infos .flag {
-  position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -258,7 +266,6 @@ article.card .infos .txt {
 }
 
 article.card .infos .details {
-  position: absolute;
   left: 0;
   left: 0;
   bottom: 0;
@@ -335,9 +342,7 @@ article.card:hover .infos .details {
   padding: 2rem 0;
 }
 .icon_check {
-  background-color: var(--main);
   border-radius: 20px;
-  color: #fff;
   padding: 3px;
   font-size: 0.8rem;
   margin-left: 0.3rem;
@@ -351,13 +356,11 @@ article.card:hover .infos .details {
 }
 .plan__content_item {
   border: 1px solid #ddd;
-  background-color: #fff;
   border-radius: 15px;
   padding-bottom: 3rem;
 }
 .plan__content_item h2 {
   margin: 1rem auto 1.5rem;
-  color: var(--main);
 }
 .plan__list li {
   margin: 0.7rem auto;
@@ -366,30 +369,13 @@ article.card:hover .infos .details {
 }
 .pay__content,
 .pay__content_detail {
-  display: flex;
   background: #fff;
-  color: var(--main);
   border: 1px solid var(--main);
   padding: 0.5rem;
   border-radius: 20px;
   font-size: 1.6rem;
   padding-top: 1.5rem;
   margin-top: 1.5rem;
-}
-.pay__content.active,
-.pay__content_detail.active {
-  display: flex;
-  background: var(--main);
-  color: #fff;
-  padding: 0.5rem;
-  border-radius: 20px;
-  font-size: 1.6rem;
-  padding-top: 1.5rem;
-  margin-top: 1.5rem;
-}
-.pay__content.active p,
-.pay__content_detail.active p {
-  color: #fff;
 }
 .pay__content h2,
 .pay__content_detail h2 {
@@ -432,7 +418,6 @@ article.card:hover .infos .details {
 .pay__year,
 .pay__month {
   display: block;
-  position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
@@ -444,7 +429,6 @@ article.card:hover .infos .details {
 }
 .pay__year input,
 .pay__month input {
-  position: absolute;
   opacity: 0;
   cursor: pointer;
 }
@@ -456,21 +440,42 @@ article.card:hover .infos .details {
 .pay_now {
   text-align: center;
   margin: 1rem auto;
-
 }
 .pay_now_btn {
   width: 60%;
   margin: auto;
   margin-top: 2rem;
-  background-color: var(--main);
-  color: #fff;
   border: 1px solid var(--main);
   padding: 0.5rem;
   font-size: 1.3rem;
   font-weight: 700;
   border-radius: 10px;
 }
-.pay_now_btn:hover {
-  background-color: #fff;
-  color: var(--main);
+
+.feature__details{
+   transition: all .2s ease-in-out; 
+padding:19px !important;
+}
+.feature__details:hover{
+  /* scale: 1.1; */
+  background-color: #ddd;
+  opacity: 1 !important;
+  /* background-color: #42b72a; */
+   transition: all .2s ease-in-out; 
+   border-radius: 5px;
+   /* margin: 0 1rem; */
+}
+.feature__details:hover .feature__details_p{
+  opacity: 1 !important;
+}
+@media (max-width:580px) {
+  .features__app__item img {
+      margin-right: -1.2rem;
+  }
+ .infos {
+    text-align: center;
+  }
+  article.card{
+    margin: .8rem 0;
+  }
 }
