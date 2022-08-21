@@ -144,6 +144,7 @@
   }
   .features__app__items_content {
     margin-top: 2.5rem;
+    margin-right: 0;
   }
 }
 /* features style end */
@@ -323,9 +324,7 @@ article.card:hover .infos .details {
 .features__app__details__content {
   padding: 4rem 1rem;
 }
-.features__app__items_content {
-  margin-right: 0 !important;
-}
+
 .features__system {
   padding: 50px 24px;
 }
