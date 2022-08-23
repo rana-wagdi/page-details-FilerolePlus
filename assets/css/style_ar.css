@@ -11,7 +11,7 @@
 }
 /* header style start */
 .content-header {
-  height: 100vh;
+  height: 90vh;
 }
 .content-header, .inner-content-header, .features__system, .features-items, .pay__content,
 .pay__content_detail, .pay__content.active,
@@ -478,4 +478,15 @@ padding:19px !important;
   article.card{
     margin: .8rem 0;
   }
+}
+.call-to-action a{
+  color: #fff;
+  text-decoration: none;
+}
+.call-to-action-v a{
+  color: #000 !important;
+  text-decoration: none;
+}
+button a:hover{
+  color: #fff;
 }
